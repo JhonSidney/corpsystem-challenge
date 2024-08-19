@@ -3,13 +3,38 @@
 ## Introdução
 Esta API requer Django e Django Rest Framework para execução do backend, e Vue.js para o frontend. A URL base da API é localhost, e os endpoints podem ser acessados adicionando "/api/v1/" à URL base.
 
-#### TECNOLOGIAS USADAS:
+## TECNOLOGIAS USADAS:
 - Bootstap:
 - Git:
 - Django:
 - Dajngo Rest Framework:
 
-#### ENDPOINTS CRIADOS 
+### Configuração e Execução do Projeto Django
+#### 1. Instalação do Python 3:
+- sudo apt update
+- sudo apt install python3 python3-pip
+
+#### 2. Criar e Ativar um Ambiente Virtual
+- python3 -m venv venv
+- source venv/bin/activate  # Linux/MacOS
+- venv\Scripts\activate      # Windows
+
+#### 3. Instalação do Django
+- pip install django
+
+#### 4. Instalação do Django REST Framework
+- pip install djangorestframework
+
+#### 5. Instalação do django-cors-headers
+- pip install django-cors-headers
+
+#### 6. Criação das Migrações
+- python manage.py makemigrations
+
+#### 7.Aplicação das Migrações
+- python manage.py migrate
+
+## ENDPOINTS CRIADOS 
 - CUSTOMERS
   - api/v1/ customers/  (listar todos os clientes)
   - api/v1/ customers/create/ [name='customer-create']
