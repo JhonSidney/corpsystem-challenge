@@ -1,12 +1,14 @@
 from rest_framework import serializers
 from productgroup.models import ProductGroup
+from product.models import Product
 from product.api.serializers import ProductSerializer
 
 class ProductGroupSerializer(serializers.ModelSerializer):
-    group_id = serializers.SerializerMethodField()
-    group_name = serializers.SerializerMethodField()
-    category =  serializers.SerializerMethodField()
-    products =  serializers.SerializerMethodField()
+    group_id = serializers.ReadOnlyField()  # Apenas leitura
+    group_name = serializers.CharField(required=True)  # Campo obrigatório
+    category = serializers.CharField(required=True)  # Campo obrigatório
+    products = serializers.PrimaryKeyRelatedField(queryset=Product.objects.all(), many=True, required=False)  # Campo opcional
+
     
     class Meta:
         model = ProductGroup
