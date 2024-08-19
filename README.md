@@ -1,7 +1,7 @@
 # Documentação da API
 
 ## Introdução
-Esta API requer Django e Django Rest Framework para execução do backend, e Vue.js para o frontend. A URL base da API é localhost, e os endpoints podem ser acessados adicionando "/api/v1/" à URL base.
+Esta API requer Django e Django Rest Framework para execução do backend e Vue.js para o frontend que encontra-se no repositorio <a href="https://github.com/JhonSidney/corpsystem-challenge-front"> Challenge Corpsystem Front-ed</a>. A URL base da API é localhost, e os endpoints podem ser acessados adicionando "/api/v1/" à URL base.
 
 ## TECNOLOGIAS USADAS:
 - Bootstap:
